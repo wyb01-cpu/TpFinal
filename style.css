@@ -1,0 +1,80 @@
+/*Style Global*/
+footer {
+    background-color: #444444;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.rowFooter {
+    height: 100px;
+}
+
+
+
+/*Style Reclamo*/
+.btnEnviar{
+    width: 100%;
+}
+
+.inputReclamo{
+    margin: 18px 0px;
+    min-width: 400px;
+}
+
+.tituloReclamo{
+    margin: 60px 0px;
+}
+
+
+.formReclamo{
+    border: 1px solid #888888;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    background-color: #cccccc;
+}
+
+.subTitleReclamo{
+    margin: 30px 0px;
+}
+
+
+
+@media screen AND (max-width: 990px){
+    .inputReclamo{
+        width: 100%;
+    }
+
+    .containerReclamo{
+    justify-content: space-around;
+    }
+
+    .btnEnviar{
+        width: 60%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*Style Pagina de Contacto*/
+.tituloContacto {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 30px;
+}
+
+.cardContacto {
+    min-width: 380px;
+    margin: 40px 30px;
+}
+
+.imgContacto {
+    width: 100%;
+}
