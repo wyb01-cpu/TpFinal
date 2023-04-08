@@ -38,13 +38,10 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Nosotros</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="reclamo.html">Reclamo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="formContac.html">Contacto</a>
                         </li>
                     </ul>
 
@@ -60,7 +57,7 @@
 
     <main>
 
-        <h2 class="tituloReclamo text-center">Formulario de Reclamo</h2>
+        <h2 class="tituloReclamo text-center">Formulario de Reclamos o Consulta</h2>
 
         <div div class="container text-center d-flex flex-wrap containerReclamo">
 
@@ -97,20 +94,20 @@
 
 
                     <div class="col-10 text-start inputReclamo">
-                        <label for="Reclamo" class="form-label">Motivo del Reclamo</label>
+                        <label for="Reclamo" class="form-label">Motivo del Reclamo o Consulta</label>
                         <input type="text" class="form-control" id="Reclamo" aria-describedby="Reclamo"
-                            placeholder="Reclamo">
+                            placeholder="Reclamo/Consulta">
                     </div>
 
                     <div class="col-10 text-start inputReclamo">
-                        <label for="motivo" class="form-label">Comente el reclamo</label>
+                        <label for="motivo" class="form-label">Comente el reclamo o Consulta</label>
 
                         <textarea class="form-control" id="motivo" rows="8"
-                            placeholder="Comentario del Reclamo"></textarea>
+                            placeholder="Comentario del Reclamo/Consulta"></textarea>
 
                     </div>
 
-                    <div class="col-4 inputReclamo ss">
+                    <div class="col-4 inputReclamo">
                         <button type="button" class="btn btn-primary btnEnviar" data-bs-toggle="modal" data-bs-target="#modalReclamo">Enviar</button>
                     </div>
 
@@ -152,7 +149,7 @@
 
 
     <!-- Modal Confirmacion -->
-    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content" >
 

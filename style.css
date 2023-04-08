@@ -1,4 +1,4 @@
-/*Style Global*/
+/*GLOBAL*/
 footer {
     background-color: #444444;
     color: #ffffff;
@@ -11,7 +11,9 @@ footer {
 
 
 
-/*Style Reclamo*/
+
+
+/*RECLAMO*/
 .btnEnviar{
     width: 100%;
 }
@@ -27,11 +29,9 @@ footer {
 
 
 .formReclamo{
-
     border: 1px solid #888888;
     border-radius: 30px;
     margin-bottom: 80px;
-    margin-top: 50px;
     background-color: #cccccc;
 }
 
@@ -57,14 +57,14 @@ footer {
 }
 
 
-ul {
-    list-style: none;
-    padding: 0;
-}
 
 
 
-/*Style Pagina de Contacto*/
+
+
+
+
+/*CONTACTO*/
 .tituloContacto {
     font-family: 'Great Vibes', cursive;
     font-weight: 400;
@@ -81,31 +81,116 @@ ul {
     width: 100%;
 }
 
-/* CONTACT INFO */
-.contact-info {
-    background:#4C4DBD;
-    background-image: url(https://i.imgur.com/shty3uD.jpeg);
-    background-repeat: none;
-    background-size: auto;
-    background-position: center;
-    font-family: 'arial black';
-    font-weight: 400;
-    margin:auto;
-}
-
-.contact-info h4, .contact-info ul, .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
+.cardContacto .card{
+    box-shadow: 0px 5px 10px 1px #6b6b6b;/*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
 }
 
 
-/* LARGE SIZE */
-@media(min-width: 700px) {
 
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-        color: #010129;
-    }
+
+/*HOME*/
+.aside{
+    background-color:#b9b9b9;
+    min-width: 230px;
 }
+
+.main{
+    background-color: #e2e2e2;
+}
+
+.aside .accordion{
+    margin: 30px 0px;
+}
+
+.main .card{
+    margin: 30px 0px;
+    box-shadow: 0px 4px 7px 3px #6b6b6b;/*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
+}
+
+.formInscripcion{
+    border: 1px solid #888888;
+    border-radius: 30px;
+    background-color: #cccccc;
+    
+}
+
+.containerInscripcion{
+
+    padding: 0px;
+}
+
+.modal-body-inscripcion{
+    border-radius: 30px;
+}
+
+.tituloModalInscripcion{
+    margin: 30px 0px;
+}
+
+.inputInscripcion{
+    margin: 18px 0px;
+  
+}
+
+.formInscripcion .row{
+    margin: 0px 10px;
+}
+
+
+
+/*IMAGEN LOGO*/
+.titleLogo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    display: inline;
+    background: linear-gradient(90deg, #311fff 0%, #1af4ff 100%);
+    -webkit-text-fill-color: transparent;/* hace que el color de las letras sea transparente*/
+    -webkit-background-clip: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
+}
+
+.subTitleLogo1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.subTitleLogo2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+
+}
+
+.grupIcon div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500px;
+    display: flex;
+    align-items: start;
+}
+
+i {
+    color: #0ad3c0;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.backLogo {
+    background: linear-gradient(to right, #c4e9f8 0%, #f6fbfe 45%, #f6fbfe 55%, #a9e0ef 100%)
+}
+
+
+.imgLogo {
+    height: 280px;
+}
+
+
+
+
+ /*
+input:invalid {
+    border: 2px solid red;
+  }
+ 
+  input:valid {
+    border: 2px solid black;
+  }
+  */
