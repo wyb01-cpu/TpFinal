@@ -103,9 +103,29 @@ ul {
 @media(min-width: 700px) {
 
     .contact-info h4,
+    .contact-info h5,
     .contact-info ul,
     .contact-info p {
         text-align: left;
         color: #010129;
     }
 }
+
+.pie {
+    margin-top: 100px;
+    text-align: center;
+    justify-content: space-between;
+    color: #010129;
+
+}
+.icons {
+
+    filter: invert(75%) sepia(3%) saturate(6807%) hue-rotate(192deg) brightness(90%) contrast(114%);
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-inline: 5px;
+    
+   }
