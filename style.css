@@ -27,9 +27,11 @@ footer {
 
 
 .formReclamo{
+
     border: 1px solid #888888;
     border-radius: 30px;
     margin-bottom: 80px;
+    margin-top: 50px;
     background-color: #cccccc;
 }
 
@@ -55,10 +57,10 @@ footer {
 }
 
 
-
-
-
-
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 
 
@@ -77,4 +79,33 @@ footer {
 
 .imgContacto {
     width: 100%;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background:#4C4DBD;
+    background-image: url(https://i.imgur.com/shty3uD.jpeg);
+    background-repeat: none;
+    background-size: auto;
+    background-position: center;
+    font-family: 'arial black';
+    font-weight: 400;
+    margin:auto;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+        color: #010129;
+    }
 }
