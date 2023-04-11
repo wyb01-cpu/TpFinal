@@ -145,7 +145,7 @@ footer {
     display: inline;
     background: linear-gradient(90deg, #311fff 0%, #1af4ff 100%);
     -webkit-text-fill-color: transparent;/* hace que el color de las letras sea transparente*/
-    -webkit-background: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
+    -webkit-background-clip: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
 }
 
 .subTitleLogo1 {
