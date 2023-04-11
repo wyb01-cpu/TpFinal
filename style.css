@@ -145,7 +145,7 @@ footer {
     display: inline;
     background: linear-gradient(90deg, #311fff 0%, #1af4ff 100%);
     -webkit-text-fill-color: transparent;/* hace que el color de las letras sea transparente*/
-    -webkit-background-clip: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
+    -webkit-background: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
 }
 
 .subTitleLogo1 {
@@ -206,11 +206,13 @@ input:invalid {
     font-family: 'arial black';
     font-weight: 400;
     margin:auto;
+
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
+
 }
 
 
@@ -219,7 +221,7 @@ input:invalid {
 
     .contact-info h4,
     .contact-info h5,
-    .contact-info ul,
+    .contact-info ul,s
     .contact-info p {
         text-align: left;
         color: #010129;
