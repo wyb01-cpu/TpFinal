@@ -9,130 +9,76 @@ footer {
     height: 100px;
 }
 
-
-
-
-
-/*RECLAMO*/
-.btnEnviar{
-    width: 100%;
-}
-
-.inputReclamo{
-    margin: 18px 0px;
-    min-width: 400px;
-}
-
-.tituloReclamo{
-    margin: 60px 0px;
+.sizeBtn {
+    width: 30%;
 }
 
 
-.formReclamo{
-    border: 1px solid #888888;
-    border-radius: 30px;
-    margin-bottom: 80px;
-    background-color: #cccccc;
+.margenTitulo {
+    margin: 20px 0px;
 }
 
-.subTitleReclamo{
-    margin: 30px 0px;
+.btnFormPosition {
+    position: absolute;
+    bottom: 10px;
 }
 
-
-
-@media screen AND (max-width: 990px){
-    .inputReclamo{
-        width: 100%;
-    }
-
-    .containerReclamo{
-    justify-content: space-around;
-    }
-
-    .btnEnviar{
-        width: 60%;
-    }
-
+textarea {
+    resize: none;
 }
 
-
-
-
-
-
-
-
-
-/*CONTACTO*/
-.tituloContacto {
-    font-family: 'Great Vibes', cursive;
-    font-weight: 400;
-    font-size: 48px;
-    padding-top: 30px;
+p {
+    overflow: hidden;
 }
-
-.cardContacto {
-    min-width: 380px;
-    margin: 40px 30px;
-}
-
-.imgContacto {
-    width: 100%;
-}
-
-.cardContacto .card{
-    box-shadow: 0px 5px 10px 1px #6b6b6b;/*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
-}
-
 
 
 
 /*HOME*/
-.aside{
-    background-color:#b9b9b9;
+.aside {
+    background-color: #b9b9b9;
     min-width: 230px;
 }
 
-.main{
+.main {
     background-color: #e2e2e2;
 }
 
-.aside .accordion{
+.aside .accordion {
     margin: 30px 0px;
 }
 
-.main .card{
+.main .card {
     margin: 30px 0px;
-    box-shadow: 0px 4px 7px 3px #6b6b6b;/*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
+    box-shadow: 0px 4px 7px 3px #6b6b6b;
+    /*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
 }
 
-.formInscripcion{
+.formInscripcion {
     border: 1px solid #888888;
     border-radius: 30px;
     background-color: #cccccc;
-    
+
 }
 
-.containerInscripcion{
+.containerInscripcion {
 
     padding: 0px;
 }
 
-.modal-body-inscripcion{
+.modal-body-inscripcion {
     border-radius: 30px;
 }
 
-.tituloModalInscripcion{
+.tituloModalInscripcion {
     margin: 30px 0px;
 }
 
-.inputInscripcion{
+.inputInscripcion {
     margin: 18px 0px;
-  
+
 }
 
-.formInscripcion .row{
+.formInscripcion .row {
     margin: 0px 10px;
 }
 
@@ -144,8 +90,10 @@ footer {
     font-size: 45px;
     display: inline;
     background: linear-gradient(90deg, #311fff 0%, #1af4ff 100%);
-    -webkit-text-fill-color: transparent;/* hace que el color de las letras sea transparente*/
-    -webkit-background-clip: text;/*hace que el fondo se extiende solo en el espacio de las letras*/
+    -webkit-text-fill-color: transparent;
+    /* hace que el color de las letras sea transparente*/
+    -webkit-background-clip: text;
+    /*hace que el fondo se extiende solo en el espacio de las letras*/
 }
 
 .subTitleLogo1 {
@@ -185,31 +133,135 @@ i {
 
 
 
- /*
-input:invalid {
-    border: 2px solid red;
-  }
- 
-  input:valid {
-    border: 2px solid black;
-  }
-  */
 
-  
+input:invalid {
+    border: 2px solid #ff7a7a;
+}
+
+.form-control:valid {
+    border: 2px solid #7bfd7b;
+}
+
+
+
+
+/*PRESENTACION*/
+.tituloPresentacion {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 30px;
+}
+
+.cardContacto {
+    min-width: 380px;
+    margin: 40px 30px;
+}
+
+.imgContacto {
+    width: 100%;
+}
+
+.cardContacto .card {
+    box-shadow: 0px 5px 10px 1px #6b6b6b;
+    /*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
+}
+
+
+
+
+
+/*RECLAMO*/
+.inputReclamo {
+    margin-top: 10px;
+}
+
+
+.formReclamo {
+    border: 1px solid #888888;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    background-color: #cccccc;
+    padding: 0px 20px;
+    height: 700px;
+    position: relative;
+}
+
+
+
+.containerReclamo {
+    max-width: 720px;
+}
+
+
+.confirmacionReclamo,
+.mensajeReclamo {
+    display: none;
+
+}
+
+.textReclamo {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
 /* CONTACT INFO */
+
+.inputContacto {
+    margin-top: 18px;
+}
+
+.formContacto {
+    border: 1px solid #888888;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    background-color: #cccccc;
+    padding: 0px 20px;
+    height: 550px;
+    position: relative;
+}
+
+.containerContacto {
+    max-width: 720px;
+}
+
+
+.confirmacionMensaje,
+.mensajeComplet {
+    display: none;
+
+}
+
+.textContacto {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+
+.infoContacto {
+    margin-bottom: 50px;
+}
+
 .contact-info {
-    background:#4C4DBD;
+    background: #4C4DBD;
     background-image: url(https://i.imgur.com/shty3uD.jpeg);
     background-repeat: none;
     background-size: auto;
     background-position: center;
     font-family: 'arial black';
     font-weight: 400;
-    margin:auto;
-
+    margin: auto;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 
@@ -221,8 +273,8 @@ input:invalid {
 
     .contact-info h4,
     .contact-info h5,
-    .contact-info ul,s
-    .contact-info p {
+    .contact-info ul,
+    s .contact-info p {
         text-align: left;
         color: #010129;
     }
@@ -235,6 +287,7 @@ input:invalid {
     color: #010129;
 
 }
+
 .icons {
 
     filter: invert(75%) sepia(3%) saturate(6807%) hue-rotate(192deg) brightness(90%) contrast(114%);
@@ -244,5 +297,5 @@ input:invalid {
     justify-content: space-between;
     margin-bottom: 20px;
     margin-inline: 5px;
-    
-   }
+
+}
