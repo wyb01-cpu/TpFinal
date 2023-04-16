@@ -18,9 +18,66 @@
 
 
     <title>Contacto</title>
+
+<!-- stylo del mapa -->
+    <style>
+		#map{
+			margin: 40px;
+            padding: 0;
+            height: 0;
+		}
+	</style>    
+
 </head>
 
 <body>
+
+    <!-- div del mapa -->
+    <div id="map"></div>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+    <script>
+    const findMe = () =>{
+        
+        var output = document.getElementById('map');
+
+        // Verificar si soporta geolocalizacion
+        if (navigator.geolocation) {
+            output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+        }else{
+            output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
+        }
+
+        //Obtenemos latitud y longitud
+        function localizacion(posicion){
+
+            var latitude = -33.13219730527238;
+            var longitude = -64.34683857050526;
+
+            var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo";
+
+            output.innerHTML ="<img src='"+imgURL+"'>";
+
+            
+
+        }
+
+        function error(){
+            output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+
+        }
+
+        navigator.geolocation.getCurrentPosition(localizacion,error);
+
+    }
+
+
+    </script>
+    <!-- div del mapa -->
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -68,9 +125,10 @@
                 <div class="contact-info" >
                     <h4>Mas Info</h4>
                         <ul>
-                            <li><i class="fas fa-map-marker-alt p-2" ></i>  Lamadrid 1446, Río Cuarto (Cba)</li>
+                            <!-- <li><i class="fas fa-map-marker-alt p-2" ></i>  Lamadrid 1446, Río Cuarto (Cba)</li> -->
                             <li><i class="fas fa-phone p-2"></i>  (358) - 4322519</li>
                             <li><i class="fas fa-envelope-open-text p-2"></i>  contacodelaintitución@website.com</li>
+                            <button onclick="findMe()">Mostrar ubicación</button>
                         </ul>
                 </div>
         </div>
