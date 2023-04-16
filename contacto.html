@@ -23,8 +23,6 @@
     <style>
 		#map{
 			margin: 40px;
-            padding: 0;
-            height: 0;
 		}
 	</style>    
 
@@ -53,7 +51,7 @@
         }
 
         //Obtenemos latitud y longitud
-        function localizacion(posicion){
+        const localizacion = (posicion) => {
 
             var latitude = -33.13219730527238;
             var longitude = -64.34683857050526;
@@ -66,7 +64,7 @@
 
         }
 
-        function error(){
+        const error = () => {
             output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
 
         }
