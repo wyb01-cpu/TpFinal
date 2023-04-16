@@ -168,7 +168,7 @@ footer {
 }
 
 i {
-    color: #0ad3c0;
+    color:#7C9FF5;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -206,25 +206,27 @@ input:invalid {
     font-family: 'arial black';
     font-weight: 400;
     margin:auto;
-
+    margin-bottom: 40px;
+    height: 200px;
+      
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+/* .contact-info h4, .contact-info ul {
     text-align: center;
     margin: 0 0 1rem 0;
-
 }
-
+ */
 
 /* LARGE SIZE */
 @media(min-width: 700px) {
 
     .contact-info h4,
     .contact-info h5,
-    .contact-info ul,s
-    .contact-info p {
+    .contact-info ul,s,p
+     {
         text-align: left;
         color: #010129;
+        list-style: none;
     }
 }
 
