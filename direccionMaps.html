@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maps</title>
-</head>
-<body>
-    <h1>Contacto</h1>
-    <hr>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.8235765246677!2d-64.34956576344088!3d-33.12418053004287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2000fbdd02247%3A0xc58d0a705d7cc0e3!2zUsOtbyBDdWFydG8sIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1681573523235!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gmaps</title>
+    <style>
+		#map{
+			margin: 20px;
+		}
+	</style>
+
+  </head>
+  <body>
+    <button onclick="findMe()">Mostrar ubicación</button>
+	<div id="map"></div>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+	<script>
+		function findMe(){
+			var output = document.getElementById('map');
+
+			// Verificar si soporta geolocalizacion
+			if (navigator.geolocation) {
+				output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+			}else{
+				output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
+			}
+
+			//Obtenemos latitud y longitud
+			function localizacion(posicion){
+
+				var latitude = -33.13219730527238;
+				var longitude = -64.34683857050526;
+
+				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo";
+
+				output.innerHTML ="<img src='"+imgURL+"'>";
+
+				
+
+			}
+
+			function error(){
+				output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+
+			}
+
+			navigator.geolocation.getCurrentPosition(localizacion,error);
+
+		}
+
+
+	</script>
+  </body>
 </html>
