@@ -18,7 +18,7 @@ $("#formInscripcion").on("submit", function(e){
     let inicioCurso = document.getElementById("card-li-5").innerHTML;
     let modalidad = document.getElementById("card-li-1").innerHTML;
     let encuentros = document.getElementById("card-li-3").innerHTML;
-    document.getElementById("menssajeConfirm").innerHTML="Estas seguro que quieres registrarte en el curso de "+titleMensaje+"?";
+    document.getElementById("mensajeConfirm").innerHTML="Estas seguro que quieres registrarte en el curso de "+titleMensaje+"?";
     document.getElementById("mensajeInfo").innerHTML=inicioCurso+"<br/>"+modalidad+"<br/>"+encuentros;
 });
 
@@ -220,5 +220,40 @@ const aceptarContacto = () =>{
     document.getElementById("mensajeContacto").style.display="block";
 
     let nombre = document.getElementById("nombre").value;
-    document.getElementById("infoReclamo").innerHTML="<strong>Enviado</strong><br>"+nombre+" recibimos tu mensaje<br/>¡Gracias por tu interes! ";
+    document.getElementById("infoReclamo").innerHTML="<strong>Enviado!</strong><br>"+nombre+" recibimos tu mensaje<br/>¡Gracias por tu interes! ";
+}
+
+
+const findMe = () =>{
+			
+    var output = document.getElementById('map');
+
+    // Verificar si soporta geolocalizacion
+    if (navigator.geolocation) {
+        output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+    }else{
+        output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
+    }
+
+    //Obtenemos latitud y longitud
+    function localizacion(posicion){
+
+        var latitude = -33.13219730527238;
+        var longitude = -64.34683857050526;
+
+        var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo";
+
+        output.innerHTML ="<img src='"+imgURL+"'>";
+
+        
+
+    }
+
+    function error(){
+        output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+
+    }
+
+    navigator.geolocation.getCurrentPosition(localizacion,error);
+
 }

@@ -5,8 +5,13 @@ footer {
     margin-top: 10px;
 }
 
+.marginFooter {
+    margin-top: 50px;
+}
+
 .rowFooter {
-    height: 100px;
+    margin-top: 10px;
+    height: 50px;
 }
 
 .sizeBtn {
@@ -14,8 +19,26 @@ footer {
 }
 
 
+
+.marginBtn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.marginTitleForm {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 25px 0px;
+    padding: 5px 0px;
+}
+
+
+
+
 .margenTitulo {
     margin: 20px 0px;
+    padding-top: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .btnFormPosition {
@@ -31,16 +54,56 @@ p {
     overflow: hidden;
 }
 
+body {
+    background-color: #ededed;
+}
+
+.iconConfirm {
+    color: #5083ad;
+    font-size: 65px;
+}
+
+.iconRegistro {
+    color: #52cbbb;
+    font-size: 65px;
+}
+
+
+.iconConfirmForm {
+    color: #5083ad;
+    font-size: 85px;
+}
+
+.iconRegistroForm {
+    color: #52cbbb;
+    font-size: 85px;
+}
+
+.colorConfirmacion {
+    color: #ffffff;
+    background-color: #69a6d1;
+    border-radius: 10px;
+}
+
+
+.colorRegistro {
+    color: #ffffff;
+    background-color: #52cbbb;
+    border-radius: 10px;
+}
+
+
 
 
 /*HOME*/
 .aside {
-    background-color: #b9b9b9;
+    background-color: #ffff;
     min-width: 230px;
 }
 
 .main {
-    background-color: #e2e2e2;
+    background-color: #ffff;
+    padding-bottom: 60px;
 }
 
 .aside .accordion {
@@ -49,14 +112,14 @@ p {
 
 .main .card {
     margin: 30px 0px;
-    box-shadow: 0px 4px 7px 3px #6b6b6b;
+    box-shadow: 0px 4px 7px 3px #8f8f8f;
     /*Orden: eje X / eje Y / tamanio del desenfoque / borde de la sombra / color.*/
 }
 
 .formInscripcion {
     border: 1px solid #888888;
     border-radius: 30px;
-    background-color: #cccccc;
+    background-color: #e5ebf1;
 
 }
 
@@ -81,6 +144,15 @@ p {
 .formInscripcion .row {
     margin: 0px 10px;
 }
+
+
+.accordion {
+    box-shadow: 0px 4px 7px 3px #6b6b6b;
+}
+
+
+
+
 
 
 
@@ -115,11 +187,22 @@ p {
     align-items: start;
 }
 
-i {
+.iconLogo {
     color: #0ad3c0;
     font-size: 20px;
     margin-right: 10px;
 }
+
+
+
+
+.bi-check2 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
 
 .backLogo {
     background: linear-gradient(to right, #c4e9f8 0%, #f6fbfe 45%, #f6fbfe 55%, #a9e0ef 100%)
@@ -142,15 +225,43 @@ input:invalid {
     border: 2px solid #7bfd7b;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.cursoSelect {
+    color: #4e4e4e;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.cursoSelect:hover {
+    color: #0ad3c0;
+}
+
+.accordion-body {
+    padding-bottom: 0px;
+    padding-bottom: 16px;
+
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+
 
 
 
 /*PRESENTACION*/
 .tituloPresentacion {
-    font-family: 'Great Vibes', cursive;
-    font-weight: 400;
-    font-size: 48px;
-    padding-top: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-top: 40px;
 }
 
 .cardContacto {
@@ -170,11 +281,24 @@ input:invalid {
 
 
 
+.cardNosotros:hover {
+    box-shadow: 0px 5px 8px 8px #a2ebe5;
+    border: 1px solid #8bebe3;
+
+}
+
+
+
+
+
+
+
 
 /*RECLAMO*/
 .inputReclamo {
     margin-top: 10px;
 }
+
 
 
 .formReclamo {
@@ -190,6 +314,7 @@ input:invalid {
 
 
 .containerReclamo {
+    margin-top: 40px;
     max-width: 720px;
 }
 
@@ -211,8 +336,7 @@ input:invalid {
 
 
 
-/* CONTACT INFO */
-
+/*CONTACTO*/
 .inputContacto {
     margin-top: 18px;
 }
@@ -239,63 +363,43 @@ input:invalid {
 }
 
 .textContacto {
-    margin-top: 50px;
+    margin-bottom: 0px;
     font-size: 18px;
 }
 
 
 .infoContacto {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
+
+
 .contact-info {
-    background: #4C4DBD;
-    background-image: url(https://i.imgur.com/shty3uD.jpeg);
+    background: #dae8f2;/*
+    background-image: url(https://i.imgur.com/shty3uD.jpeg);*/
     background-repeat: none;
     background-size: auto;
     background-position: center;
     font-family: 'arial black';
     font-weight: 400;
     margin: auto;
-}
-
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
+    border: 1px solid #cecece;
 
 }
 
-
-/* LARGE SIZE */
-@media(min-width: 700px) {
-
-    .contact-info h4,
-    .contact-info h5,
-    .contact-info ul,
-    s .contact-info p {
-        text-align: left;
-        color: #010129;
-    }
-}
-
-.pie {
-    margin-top: 100px;
-    text-align: center;
-    justify-content: space-between;
+.textMasInfo {
     color: #010129;
-
+    margin: 13px 0px;
 }
 
-.icons {
-
-    filter: invert(75%) sepia(3%) saturate(6807%) hue-rotate(192deg) brightness(90%) contrast(114%);
-    width: 34px;
-    height: 34px;
-    text-align: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-inline: 5px;
-
+.iconSocial {
+    font-size: 33px;
+    margin: 10px;
+    color: #ffffff;
 }
+
+.titleRedSocial {
+    margin: 20px 0px;
+}
+
+

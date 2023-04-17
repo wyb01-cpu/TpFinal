@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 
+        <!--Icono Boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+
     <title>Contacto</title>
 </head>
 
@@ -65,6 +69,8 @@
     <div class="container-fluid">
         <div class="row infoContacto">
             <h2 class="margenTitulo text-center">Contactenos</h2>
+
+            <!--
                 <div class="contact-info" >
                     <h4>Mas Info</h4>
                         <ul>
@@ -74,15 +80,19 @@
                         </ul>
                         <p>Nombre de la institución</p>
                 </div>
+
+            -->
+                
         </div>
 
+       
         <div class="row">
 
             <div div class="container text-center containerContacto">
 
                 <form class="formContacto" id="formContacto">
                     
-    
+                    <!--row 1-->
                     <div class="row justify-content-center" id="formularioContacto">
                        
     
@@ -120,18 +130,27 @@
     
     
     
-    
+                    <!--row 2-->
                     <div class="row justify-content-center confirmacionMensaje" id="confirmacionContacto">
 
-                        <h3 class="margenTitulo">Confirmacion</h3>
+                        <div class="col-12 colorConfirmacion">
+                            <h3 class="marginTitleForm"><strong>Confirmacion</strong></h3>
     
-                        <div class="col-12 text-start inputContacto">
+                        </div>
+
+                        <div class="col-12 text-start ">
                             <h5><strong>Estas seguro que quieres enviar este Mensaje?</strong></h5>
                         </div>
-                        <div class="col-12 text-start inputContacto">
+
+                        <div class="col-12 text-start ">
                             <p class="textContacto" id="textContacto"></p>
                         </div>
 
+                        <div class="col-12">
+                            <i class="bi bi-exclamation-circle-fill iconConfirmForm"></i>
+                       
+                        </div>
+    
                         <div class="col-12 inputContacto btnFormPosition">
                             <button type="button" class="btn btn-primary sizeBtn" onclick="aceptarContacto()">Aceptar</button>
                             <button type="button" class="btn btn-secondary sizeBtn" onclick="atrasContacto()">Atras</button>
@@ -142,14 +161,31 @@
     
     
     
-    
+                    <!--row 3-->
                     <div class="row justify-content-center mensajeComplet" id="mensajeContacto">
-                        <h3 class="margenTitulo">Mensaje enviado</h3>
+
+
+
+                        <div class="col-12 colorRegistro">
+                            <h3 class="marginTitleForm"><strong>Mensaje Enviado</strong></h3>
+                        </div>
+
+
+
+
+
+
     
                         <div class="col-12  inputReclamo  text-start">
                             <p class="textContacto" id="infoReclamo"></p>
                     
                         </div>
+
+                        
+                    <div class="col-12">
+                        <i class="bi bi-check-circle-fill iconRegistroForm"></i>
+                   
+                  </div>
     
                         <div class="col-12 inputReclamo btnFormPosition">
                             <a href="index.html"><button type="button" class="btn btn-secondary sizeBtn">Salir</button></a>
@@ -165,23 +201,62 @@
 
         </div>
 
+
         <div class="row">
-            <div class="contact-info" >
-                <h5>Siguenos en nuestras Redes</h5>
-                <div class="pie">
-                    <i class="twiter"></i>
-                    <img class= "icons" src="https://img.icons8.com/android/256/twitter.png" alt="twity" />
-                    <i class="facebook"></i>
-                    <img class= "icons" src="https://img.icons8.com/material-sharp/256/facebook-new.png" alt="linked" />
-                    <i class="linkedIn"></i>
-                    <img class= "icons" src="https://img.icons8.com/ios-filled/256/linkedin-2.png" alt="linked" />
+            <div class="col-12 contact-info">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h4 class="textMasInfo">Mas Info</h4>
+                            <ul>
+                                <li class="textMasInfo"><i class="fas fa-map-marker-alt p-2" ></i>  Lamadrid 1446, Río Cuarto (Cba)</li>
+                                <li class="textMasInfo"><i class="fas fa-phone p-2"></i>  (358) - 4322519</li>
+                                <li class="textMasInfo"><i class="fas fa-envelope-open-text p-2"></i>  contacodelaintitución@website.com</li>
+                                <li><button type="button" class="btn btn-primary sizeBtn textMasInfo" onclick="findMe()">Mostrar Ubicacion</button></li>
+                            </ul>
+
+                    </div>
+                    <!--Aqui colocar el MAP GOOGLE-->
+                    <div class="col-sm-12 col-md-6 text-center">
+                        
+                        <div id="map"  style="width:100%;overflow: auto"></div>
+
+
+
+
+
+                    </div>
                 </div>
+
             </div>
+                    
+            
         </div>
+
+
+
+
+
+
+
+
+
 
        <div class="row">
             <footer>
                 <div class="container-fluid text-center">
+                    <h5 class="titleRedSocial">Siguenos en nuestras Redes</h5>
+                    
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <i class="bi bi-twitter iconSocial"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="bi bi-facebook iconSocial"></i>
+                    </a>
+
+                    <a href="https://ar.linkedin.com/" target="_blank">
+                        <i class="bi bi-linkedin iconSocial"></i>
+                    </a>
                     <div class="row align-items-center rowFooter">
                         <div class="col">
                             <p>Copyright © 2023</p>
@@ -194,6 +269,11 @@
     </div>
     
 
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnfnLas7F0ddZ0Btb71B-MHiwMVDFM8jo"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="

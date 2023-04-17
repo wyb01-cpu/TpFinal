@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
+      <!--Icono Boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <title>Contacto</title>
 </head>
@@ -57,124 +59,169 @@
 
     </header>
 
+    <div class="container-fluid">
 
-    <main>
+        <main>
 
-        <h2 class="margenTitulo text-center">Formulario de Reclamos o Consulta</h2>
-
-        <div div class="container text-center containerReclamo">
-
-            <form class="formReclamo" id="formReclamo">
-                
-                <!--row 1-->
-                <div class="row justify-content-center formularioReclamo" id="formularioReclamo">
-                   
-
-                    <div class="col-12 text-start inputReclamo">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" aria-describedby="nombre"
-                            placeholder="Nombre" minlength="3" maxlength="20" pattern="[a-zA-Z\s]{3,20}" required>
-                    </div>
-
-                    <div class="col-12 text-start inputReclamo">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" aria-describedby="apellido"
-                            placeholder="Apellido" minlength="3" maxlength="20" pattern="[a-zA-Z\s]{3,20}" required>
-                    </div>
-
-
-                    <div class="col-12 text-start inputReclamo">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="correo@correo.com" maxlength="40" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$" required />
-                    </div>
-
-
-                    <div class="col-12 text-start inputReclamo">
-                        <label for="telefono" class="form-label">Telefono</label>
-                        <input type="text" class="form-control" id="telefono" aria-describedby="telefono"
-                        placeholder="234515234523" minlength="10" maxlength="10" pattern="[0-9]{10,10}" required />
-                    </div>
-
-
-                    <div class="col-12  text-start inputReclamo">
-                        <label for="Reclamo" class="form-label">Titulo del Reclamo o Consulta</label>
-                        <input type="text" class="form-control" id="reclamo" aria-describedby="Reclamo"
-                            placeholder="Reclamo/Consulta" minlength="6" maxlength="40" required />
-                    </div>
-
-                    <div class="col-12  text-start inputReclamo">
-                        <label for="motivo" class="form-label">Comente el reclamo o Consulta</label>
-
-                        <textarea class="form-control" id="motivo" rows="5"
-                            placeholder="Comentario del Reclamo/Consulta" minlength="6" maxlength="300" required></textarea>
-
-                    </div>
-
-                    <div class="col-12 inputReclamo btnFormPosition">
-                        <input type="submit" class="btn btn-primary sizeBtn" value="Enviar" />
-                    </div>
-
-                </div>
-
-
-
-                <!--row 2-->
-                <div class="row justify-content-center confirmacionReclamo " id="confirmacionReclamo">
-                    <h3 class="margenTitulo">Confirmacion</h3>
-
-                    <div class="col-12 text-start inputReclamo">
-                        <h5><strong>Estas seguro que quieres enviar este Reclamo?</strong></h5>
-                    </div>
-                    <div class="col-12 text-start inputReclamo">
-                        <p class="textReclamo" id="textReclamo"></p>
-                
-                    </div>
+            <h2 class="margenTitulo text-center">Formulario de Reclamos o Consulta</h2>
+    
+            <div div class="container text-center containerReclamo">
+    
+                <form class="formReclamo" id="formReclamo">
                     
-
-
-
-
-                    <div class="col-12 inputReclamo btnFormPosition">
-                        <button type="button" class="btn btn-primary sizeBtn" onclick="aceptarReclamo()">Aceptar</button>
-                        <button type="button" class="btn btn-secondary sizeBtn" onclick="atrasReclamo()">Atras</button>
+                    <!--row 1-->
+                    <div class="row justify-content-center formularioReclamo" id="formularioReclamo">
+                       
+    
+                        <div class="col-12 text-start inputReclamo">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre"
+                                placeholder="Nombre" minlength="3" maxlength="20" pattern="[a-zA-Z\s]{3,20}" required>
+                        </div>
+    
+                        <div class="col-12 text-start inputReclamo">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" aria-describedby="apellido"
+                                placeholder="Apellido" minlength="3" maxlength="20" pattern="[a-zA-Z\s]{3,20}" required>
+                        </div>
+    
+    
+                        <div class="col-12 text-start inputReclamo">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@correo.com" maxlength="40" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$" required />
+                        </div>
+    
+    
+                        <div class="col-12 text-start inputReclamo">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" aria-describedby="telefono"
+                            placeholder="234515234523" minlength="10" maxlength="10" pattern="[0-9]{10,10}" required />
+                        </div>
+    
+    
+                        <div class="col-12  text-start inputReclamo">
+                            <label for="Reclamo" class="form-label">Titulo del Reclamo o Consulta</label>
+                            <input type="text" class="form-control" id="reclamo" aria-describedby="Reclamo"
+                                placeholder="Reclamo/Consulta" minlength="6" maxlength="50" required />
+                        </div>
+    
+                        <div class="col-12  text-start inputReclamo">
+                            <label for="motivo" class="form-label">Comente el reclamo o Consulta</label>
+    
+                            <textarea class="form-control" id="motivo" rows="5"
+                                placeholder="Comentario del Reclamo/Consulta" minlength="6" maxlength="300" required></textarea>
+    
+                        </div>
+    
+                        <div class="col-12 inputReclamo btnFormPosition">
+                            <input type="submit" class="btn btn-primary sizeBtn" value="Enviar" />
+                        </div>
+    
                     </div>
-                </div>
-
-
-
-
-
-                <!--row 3-->
-                <div class="row justify-content-center mensajeReclamo" id="mensajeReclamo">
-                    <h3 class="margenTitulo">Reclamo registrado</h3>
-
-                    <div class="col-12  inputReclamo  text-start">
-                        <p class="textReclamo" id="infoReclamo"></p>
-                
+    
+    
+    
+                    <!--row 2-->
+                    <div class="row justify-content-center confirmacionReclamo " id="confirmacionReclamo">
+                        <div class="col-12 colorConfirmacion">
+                            <h3 class="marginTitleForm"><strong>Confirmacion</strong></h3>
+    
+                        </div>
+                        
+                        <div class="col-12 text-start inputReclamo">
+                            <h5><strong>Estas seguro que quieres enviar este Reclamo?</strong></h5>
+                        </div>
+    
+                        
+    
+                        <div class="col-12 text-start inputReclamo">
+                            <p class="textReclamo" id="textReclamo"></p>
+                    
+                        </div>
+                        
+    
+    
+                        
+                        <div class="col-12">
+                            <i class="bi bi-exclamation-circle-fill iconConfirmForm"></i>
+                       
+                      </div>
+    
+    
+    
+                        <div class="col-12 inputReclamo btnFormPosition">
+                            <button type="button" class="btn btn-primary sizeBtn" onclick="aceptarReclamo()">Aceptar</button>
+                            <button type="button" class="btn btn-secondary sizeBtn" onclick="atrasReclamo()">Atras</button>
+                        </div>
                     </div>
-
-                    <div class="col-12 inputReclamo btnFormPosition">
-                        <a href="index.html"><button type="button" class="btn btn-secondary sizeBtn">Salir</button></a>
+    
+    
+    
+    
+    
+                    <!--row 3-->
+                    <div class="row justify-content-center mensajeReclamo" id="mensajeReclamo">
+    
+                        <div class="col-12 colorRegistro">
+                            <h3 class="marginTitleForm"><strong>Reclamo registrado</strong></h3>
+                        </div>
+    
+    
+                        <div class="col-12  inputReclamo  text-start">
+                            <p class="textReclamo" id="infoReclamo"></p>
+                    
+                        </div>
+    
+                        <div class="col-12">
+                            <i class="bi bi-check-circle-fill iconRegistroForm"></i>
+                       
+                      </div>
+    
+    
+                        <div class="col-12 inputReclamo btnFormPosition">
+                            <a href="index.html"><button type="button" class="btn btn-secondary sizeBtn">Salir</button></a>
+                        </div>
                     </div>
-                </div>
-
-
-            </form>
-
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container-fluid text-center">
-            <div class="row align-items-center rowFooter">
-                <div class="col">
-                    <p>Copyright © 2023</p>
-                </div>
+    
+    
+                </form>
+    
             </div>
-        </div>
+        </main>
+    
+    
+                            <div class="row">
+                                    <footer>
+                                        <div class="container-fluid text-center">
+                                            <h5 class="titleRedSocial">Siguenos en nuestras Redes</h5>
+                                            
+                                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                                <i class="bi bi-twitter iconSocial"></i>
+                                            </a>
+    
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <i class="bi bi-facebook iconSocial"></i>
+                                            </a>
+    
+                                            <a href="https://ar.linkedin.com/" target="_blank">
+                                                <i class="bi bi-linkedin iconSocial"></i>
+                                            </a>
+                                            <div class="row align-items-center rowFooter">
+                                                <div class="col">
+                                                    <p>Copyright © 2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                            </div>
 
-    </footer>
+
+
+
+
+    </div>
+
+    
 
     <script
     src="https://code.jquery.com/jquery-3.6.4.min.js"

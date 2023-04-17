@@ -81,14 +81,14 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center backLogo">
-      <div class="col col-md-4 col-xxl-3 align-self-center" style="margin: 10px 15px;">
+      <div class="col col-md-5 col-xxl-3 align-self-center" style="margin: 10px 15px;">
           <h6 class="subTitleLogo2">Aceleramos el futuro de los estudiantes</h6>
           <h1 class="titleLogo">CURSOS GRATUITOS</h1>
           <h5 class="subTitleLogo1">Inicio de inscripciones 15 Febrero</h5>
           <div class="grupIcon">
-              <div><i class="bi bi-check-circle-fill"></i> Cursos totalmente Gratis</div>
-              <div><i class="bi bi-check-circle-fill"></i> Modalidad presencial y virtual</div>
-              <div><i class="bi bi-check-circle-fill"></i> Nuevas habilidades para el día de mañana.</div>
+              <div><i class="bi bi-check-circle-fill iconLogo"></i> Cursos totalmente Gratis</div>
+              <div><i class="bi bi-check-circle-fill iconLogo"></i> Modalidad presencial y virtual</div>
+              <div><i class="bi bi-check-circle-fill iconLogo"></i> Nuevas habilidades para el día de mañana.</div>
           </div>
       </div>
       <div class="col col-md-2 col-xxl-2 align-self-end text-center" >
@@ -97,7 +97,7 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-sm-12  col-md-2 aside col-xxl-1">
+      <div class="col-sm-12  col-md-2 aside col-lg-1">
         <div class="accordion" id="menuAside">
 
           <div class="accordion-item">
@@ -109,10 +109,15 @@
             </h2>
             <div id="menu1" class="accordion-collapse collapse show" data-bs-parent="#menuAside">
               <div class="accordion-body">
+
                 <ul>
-                  <li><a onclick="mostrarCurso(0)">Photoshop</a></li>
-                  <li><a onclick="mostrarCurso(1)">Illustrator</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(0)"><i class="bi bi-check2"></i>Photoshop</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(1)"><i class="bi bi-check2"></i>Illustrator</a></li>
                 </ul>
+                
+
+
+
               </div>
             </div>
           </div>
@@ -128,9 +133,9 @@
               <div class="accordion-body">
 
                 <ul>
-                  <li><a onclick="mostrarCurso(2)">Python</a></li>
-                  <li><a onclick="mostrarCurso(3)">Java</a></li>
-                  <li><a onclick="mostrarCurso(4)">JavaScript</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(2)"><i class="bi bi-check2"></i>Python</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(3)"><i class="bi bi-check2"></i>Java</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(4)"><i class="bi bi-check2"></i>JavaScript</a></li>
                 </ul>
 
 
@@ -153,8 +158,8 @@
 
 
                 <ul>
-                  <li><a onclick="mostrarCurso(5)">Ingles</a></li>
-                  <li><a onclick="mostrarCurso(6)">Italiano</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(5)"><i class="bi bi-check2"></i>Ingles</a></li>
+                  <li><a class="cursoSelect" onclick="mostrarCurso(6)"><i class="bi bi-check2"></i>Italiano</a></li>
                 </ul>
 
 
@@ -169,7 +174,7 @@
       </div>
 
       <!--card curso-->
-      <div class="col-sm-12  col-md-6 main col-xxl-5">
+      <div class="col-sm-12  col-md-8 col-lg-6 main">
         <div class="card text mx-auto">
           <img src="https://i.imgur.com/kN6KtKB.png" class="card-img-top" alt="imgPhotoshop" id="card-imagen">
           <div class="card-body">
@@ -191,7 +196,7 @@
             </ul>
             <hr>
             <div class="text-center col-12">
-              <button type="button" class="btn btn-primary sizeBtn" id="btnInscripcion" data-bs-toggle="modal" data-bs-target="#modalInscripcion">Inscribirse</button>
+              <button type="button" class="btn btn-primary sizeBtn"  data-bs-toggle="modal" data-bs-target="#modalInscripcion">Inscribirse</button>
 
             </div>
 
@@ -205,16 +210,28 @@
 
     <div class="row">
       <footer>
-        <div class="container-fluid text-center">
-          <div class="row align-items-center rowFooter">
-            <div class="col">
-              <p>Copyright © 2023</p>
-            </div>
-          </div>
-        </div>
+          <div class="container-fluid text-center">
+              <h5 class="titleRedSocial">Siguenos en nuestras Redes</h5>
+              
+              <a href="https://twitter.com/?lang=es" target="_blank">
+                  <i class="bi bi-twitter iconSocial"></i>
+              </a>
 
+              <a href="https://www.facebook.com/" target="_blank">
+                  <i class="bi bi-facebook iconSocial"></i>
+              </a>
+
+              <a href="https://ar.linkedin.com/" target="_blank">
+                  <i class="bi bi-linkedin iconSocial"></i>
+              </a>
+              <div class="row align-items-center rowFooter">
+                  <div class="col">
+                      <p>Copyright © 2023</p>
+                  </div>
+              </div>
+          </div>
       </footer>
-    </div>
+  </div>
   </div>
 
 
@@ -237,7 +254,7 @@
               
 
               <div class="row" id="inscripcion">
-                <h4 class="tituloModalInscripcion">Ingresa tus datos</h4>
+                <h4 class="tituloModalInscripcion"><strong>Ingresa tus datos</strong></h4>
                 <div class="col-12 text-start inputInscripcion x">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" aria-describedby="nombre"
@@ -269,7 +286,7 @@
                         placeholder="234515234523" minlength="10" maxlength="10" pattern="[0-9]{10,10}" required />
                 </div>
 
-                <div class="col-sm-10  col-md-12 text-end inputInscripcion" >
+                <div class="col-sm-10  col-md-12 marginBtn" >
                   <input type="submit" class="btn btn-primary sizeBtn"  value="Enviar" />
                   <button type="button" class="btn btn-secondary sizeBtn" data-bs-dismiss="modal">Salir</button>
                 </div>
@@ -279,13 +296,33 @@
           
 
               <div class="row" style="display:none" id="confirm">
+
+                <div class="col-12 inputInscripcion colorConfirmacion">
+                  <h3><strong>Confirmacion</strong></h3>
+                </div>
+
+                
                 <div class="col-12 text-start inputInscripcion">
-                  <h3>Confirmacion</h3>
-                  <h5 id="menssajeConfirm"></h5>
+                  <h5 id="mensajeConfirm"></h5>
+                
+                </div>
+
+
+
+
+                <div class="col-12 ">
+                  <i class="bi bi-exclamation-circle-fill iconConfirm"></i>
+                 
                   <br>
+                </div>
+
+
+
+                <div class="col-12 text-start inputInscripcion">
                   <p id="mensajeInfo"></p>
                 </div>
-                <div class="col-sm-10  col-md-12 text-end inputInscripcion">
+
+                <div class="col-sm-10  col-md-12 marginBtn" >
                   <button type="button" class="btn btn-primary sizeBtn" onclick="aceptar()">Aceptar</button>
                   <button type="button" class="btn btn-secondary sizeBtn"  id="btnAtras" onclick="atras()">Atras</button>
                 </div>
@@ -294,12 +331,23 @@
 
 
               <div class="row" style="display:none" id="mensaje">
-                <div class="col-12 text-start inputInscripcion">
-                  <h3>Registracion Completada!</h3>
-                  <br>
-                  <p><strong>Registracion Completada!</strong> Nos pondremos en contactos unos dias antes del inicio de la cursada via e-mai o telefonica.</p>
+
+
+
+                <div class="col-12 inputInscripcion colorRegistro">
+                  <h3><strong>Registracion Completada</strong></h3>
                 </div>
-                <div class="col-sm-10  col-md-12 text-end inputInscripcion">
+
+                <div class="col-12 text-start inputInscripcion">
+                  <p><strong>Registracion Completada!</strong> Nos pondremos en contactos unos dias antes del inicio de la cursada via e-mai o telefonica.</p>
+                
+                </div>
+
+                <div class="col-12 ">
+                  <i class="bi bi-check-circle-fill iconRegistro"></i>
+                </div>
+
+                <div class="col-sm-10  col-md-12 marginBtn">
                   <div class="text-center">
                     <button type="button" data-bs-dismiss="modal" class="btn btn-secondary sizeBtn">Cerrar</button>
                   </div>
